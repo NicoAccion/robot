@@ -64,6 +64,36 @@ void girarIzquierda(){
   ledcWrite(BIN2, 0);
 }
 
+void girarIzqBACK(){
+  // Motor izquierdo
+  ledcWrite(AIN1, 0);
+  ledcWrite(AIN2, 0);
+
+  //Motor derecho
+  ledcWrite(BIN1, 0);
+  ledcWrite(BIN2, velocidad);
+}
+
+void girarDerecha(){
+  // Motor izquierdo
+  ledcWrite(AIN1, velocidad);
+  ledcWrite(AIN2, 0);
+
+  //Motor derecho
+  ledcWrite(BIN1, 0);
+  ledcWrite(BIN2, 0);
+}
+
+void girarDerBACK(){
+  // Motor izquierdo
+  ledcWrite(AIN1, 0);
+  ledcWrite(AIN2, velocidad);
+
+  //Motor derecho
+  ledcWrite(BIN1, 0);
+  ledcWrite(BIN2, 0);
+}
+
 void girarDerecha(){
   // Motor izquierdo
   ledcWrite(AIN1, velocidad);
